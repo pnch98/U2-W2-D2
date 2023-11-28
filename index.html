@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.jpg" alt="" class="rounded-circle" width="60" height="48" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Saldi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Welcome Summer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Last Minute</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recensioni</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Cerca posti da sogno" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">Cerca</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="hero d-flex flex-column align-items-center align-items-lg-start mt-5 mb-5 p-5 bg-light">
+        <div>
+          <span class="fs-1">Alpha Travel</span>
+          <span>- Feel the Freedom</span>
+        </div>
+        <div class="border border-top-0 border-end-0 border-start-0 p-3 mb-3 w-100"></div>
+        <span class="fst-italic mb-5">Scopri le destinazioni più calde del momento!</span>
+        <button class="btn btn-info text-white" style="width: 200px">Prenota ora</button>
+      </div>
+
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h4 class="d-inline-block">Saldi</h4>
+          <span class="text-info" style="cursor: pointer" id="hide-1">Nascondi sezione</span>
+        </div>
+
+        <div class="container mb-5" id="collapse-1">
+          <div class="row gy-4">
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card border border-2 rounded-3 border-info">
+                <img src="img/norbert-buduczki-BCaBMlDwutQ-unsplash.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Titolo</h5>
+                  <p class="card-text">
+                    Posto fantastico ci devi assolutamente andare ci sono le zebre e i koala. Bellissimo!
+                  </p>
+                  <a href="#" class="btn btn-primary">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card border border-2 rounded-3 border-info">
+                <img src="img/norbert-buduczki-BCaBMlDwutQ-unsplash.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Titolo</h5>
+                  <p class="card-text">Qua fa molto caldo però alla fine si può fare bellissimo 10/10 IGN vacci ora!</p>
+                  <a href="#" class="btn btn-primary">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card border border-2 rounded-3 border-info">
+                <img src="img/norbert-buduczki-BCaBMlDwutQ-unsplash.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Titolo</h5>
+                  <p class="card-text">Ti congeli le natiche sincero, esperienza imperdibile. E ci sono i pinguini!</p>
+                  <a href="#" class="btn btn-primary">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 d-md-none d-lg-block col-lg-3">
+              <div class="card border border-2 rounded-3 border-info">
+                <img src="img/norbert-buduczki-BCaBMlDwutQ-unsplash.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Titolo</h5>
+                  <p class="card-text">
+                    Boh non lo so dov'è qua però so che è bello. Viaggio al buio = spasso assicurato!
+                  </p>
+                  <a href="#" class="btn btn-primary">Prenota</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mb-5">
+        <div class="d-flex justify-content-between">
+          <h4 class="d-inline-block">Welcome Summer</h4>
+          <span class="text-info" style="cursor: pointer" id="hide-2">Nascondi sezione</span>
+        </div>
+
+        <div class="container mb-5" id="collapse-2">
+          <div class="row g-3">
+            <div class="col-6 col-lg-4">
+              <div class="card shadow position-relative">
+                <img src="img/norbert-buduczki-BCaBMlDwutQ-unsplash.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                  <span class="bg-danger border-0 rounded-3 text-white fs-6 fw-bold px-1 position-absolute top-0 end-0"
+                    >Hot</span
+                  >
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4">
+              <div class="card shadow position-relative">
+                <img src="img/norbert-buduczki-BCaBMlDwutQ-unsplash.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                  <span class="bg-danger border-0 rounded-3 text-white fs-6 fw-bold px-1 position-absolute top-0 end-0"
+                    >Hot</span
+                  >
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4">
+              <div class="card shadow position-relative">
+                <img src="img/norbert-buduczki-BCaBMlDwutQ-unsplash.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                  <span class="bg-danger border-0 rounded-3 text-white fs-6 fw-bold px-1 position-absolute top-0 end-0"
+                    >Hot</span
+                  >
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4">
+              <div class="card shadow position-relative">
+                <img src="img/norbert-buduczki-BCaBMlDwutQ-unsplash.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                  <span class="bg-danger border-0 rounded-3 text-white fs-6 fw-bold px-1 position-absolute top-0 end-0"
+                    >Hot</span
+                  >
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4">
+              <div class="card shadow position-relative">
+                <img src="img/norbert-buduczki-BCaBMlDwutQ-unsplash.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                  <span class="bg-danger border-0 rounded-3 text-white fs-6 fw-bold px-1 position-absolute top-0 end-0"
+                    >Hot</span
+                  >
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4">
+              <div class="card shadow position-relative">
+                <img src="img/norbert-buduczki-BCaBMlDwutQ-unsplash.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                  <span class="bg-danger border-0 rounded-3 text-white fs-6 fw-bold px-1 position-absolute top-0 end-0"
+                    >Hot</span
+                  >
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mb-5">
+        <h4 class="d-inline-block">Offerta del giorno</h4>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-lg-8">
+              <img src="img/norbert-buduczki-BCaBMlDwutQ-unsplash.jpg" alt="" class="w-100 shadow" />
+            </div>
+            <div class="col-6 col-lg-4">
+              <div class="d-flex flex-column">
+                <h2>Posto dimenticato da Dio</h2>
+                <small class="text-secondary mb-2">10.12.2023 - 21-06.2059</small>
+                <p>Ville a partire da 1 milione di euro cash! Non fartele sfuggire!</p>
+                <button class="btn btn-dark p-0 rounded-pill w-50">Best offer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="d-inline-block">Last Minute</h4>
+        <div class="container mb-5">
+          <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-2">
+              <img src="img/norbert-buduczki-BCaBMlDwutQ-unsplash.jpg" alt="" class="w-100 shadow" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img src="img/norbert-buduczki-BCaBMlDwutQ-unsplash.jpg" alt="" class="w-100 shadow" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img src="img/norbert-buduczki-BCaBMlDwutQ-unsplash.jpg" alt="" class="w-100 shadow" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img src="img/norbert-buduczki-BCaBMlDwutQ-unsplash.jpg" alt="" class="w-100 shadow" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img src="img/norbert-buduczki-BCaBMlDwutQ-unsplash.jpg" alt="" class="w-100 shadow" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img src="img/norbert-buduczki-BCaBMlDwutQ-unsplash.jpg" alt="" class="w-100 shadow" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-center">Dicono di noi</h4>
+        <div class="container mt-3 mb-5">
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-1">
+                  <div>
+                    <img src="img/images.png" alt="" class="w-100" />
+                  </div>
+                </div>
+                <div class="col-10">
+                  <div>
+                    <h5>Username</h5>
+                    <p>
+                      La pernice bianca appartiene alla famiglia dei Fasianidi e il suo aspetto fisico assomiglia a
+                      quello del gallo cedrone (Tetrao urogallus) o del fagiano (Phasianus colchicus). La lunghezza
+                      totale degli adulti si aggira tra i 33 e i 40 cm. Per entrambi i sessi, il piumaggio è di colore
+                      bianco in inverno, con l’eccezione della coda che è di colore nero e mantiene questo colore
+                      durante tutto l’anno. Maschi e femmine presentano un piumaggio con macchie e striature marroni e
+                      nere durante l’estate; le striature sono più marcate nelle femmine.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-1">
+                  <div>
+                    <img src="img/images.png" alt="" class="w-100" />
+                  </div>
+                </div>
+                <div class="col-10">
+                  <div>
+                    <h5>Username</h5>
+                    <p>
+                      MI HANNO TRUFFATO QUESTI SONO LADRI!!!!11!!221010 Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Totam, explicabo praesentium tempore aliquam asperiores assumenda nemo ut
+                      dolores ipsam non vero, atque impedit labore repudiandae illo deleniti ad. Voluptatibus, vero.
+                      Delectus necessitatibus minima optio incidunt nihil repudiandae quos dicta magnam. Odit deserunt
+                      nulla quod, molestiae iste impedit corporis dolores expedita ducimus, illum excepturi fugit
+                      incidunt animi sed tempore obcaecati aliquid? Possimus reiciendis alias quas eius nisi laudantium
+                      veniam placeat error, nobis architecto aliquam earum reprehenderit consequatur dolores cupiditate
+                      cum! Iusto facere reiciendis atque adipisci deleniti odio suscipit omnis repellat voluptates.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-1">
+                  <div>
+                    <img src="img/images.png" alt="" class="w-100" />
+                  </div>
+                </div>
+                <div class="col-10">
+                  <div>
+                    <h5>Username</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quasi officia vitae sapiente
+                      dolorem nesciunt ipsa ex eveniet dolor ea? Vero praesentium exercitationem eius quibusdam itaque
+                      accusantium et sequi deleniti. Officia, soluta earum? Et beatae eligendi cupiditate aliquid qui,
+                      ad illum cumque harum voluptatem aperiam maiores accusamus, earum placeat corporis libero eveniet
+                      provident molestiae voluptates rerum. Tenetur, ducimus delectus? Quidem.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
